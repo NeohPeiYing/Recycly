@@ -1,0 +1,413 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="description" content="Recycly - Your guide to smart recycling and sustainable living. Learn how to reduce waste, recycle effectively, and embrace the 5Rs for a cleaner planet.">
+        <meta name="keywords" content="recycling, recycly, sustainable living, reduce waste, reuse, recycle, repurpose, environment, eco-friendly">
+        <meta name="author" content="Recycly">
+        <link rel="icon" href="favicon.ico" type="Image/logo.png">
+        <title>Recycly</title>
+        <!--Style.css-->
+        <link rel="stylesheet" href="style.css">
+        <!-- AOS -->
+        <script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
+        <link href="https://unpkg.com/aos@2.3.4/dist/aos.css" rel="stylesheet">
+        <!-- Boxicons -->
+        <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+        <!--FontAwesome-->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+        <!--Drop Down Design-->
+        <!-- Choices.js CSS -->
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/choices.js/public/assets/styles/choices.min.css" />
+        <!-- Choices.js JS -->
+        <script src="https://cdn.jsdelivr.net/npm/choices.js/public/assets/scripts/choices.min.js"></script>
+    </head>
+    <body>
+        <!--Top Nav Bar-->
+        <nav class="top-navbar">
+            <div class="logo">Recycly</div>
+            <div id="menuToggle" class="hamburger">☰</div>
+        </nav>
+
+        <nav id="sidebar" class="sidebar">
+            <ul class="sidebar-menu">
+                <li><a href="index.html"><i class="bx bx-home"></i> Home</a></li>
+                <li class="dropdown">
+                    <a href="#"><i class="bx bx-info-circle"></i> About <i class='bx bx-chevron-down dropdown-icon'></i></a>
+                    <ul class="dropdown-menu">
+                        <li><a href="About Pages/ourmission.html">Our Mission</a></li>
+                        <li><a href="About Pages/whywerecycle.html">Why We Recycle</a></li>
+                        <li><a href="About Pages/technology.html">Technology & Innovation</a></li>
+                        <li><a href="About Pages/history.html">History</a></li>
+                        <li><a href="About Pages/faq.html">FAQ</a></li>
+                    </ul>
+                </li>
+                <a href="howgreenareu.html"><i class="bx bx-leaf"></i> How Green are you?</a>
+                <a href="diy.html"><i class="bx bx-cog"></i> DIY Projects</a>
+                <li><a href="quiz.html"><i class="bx bx-bot"></i> Quiz</a></li>
+                <li><a href="contact.html"><i class="bx bx-envelope"></i> Contact</a></li>
+            </ul>
+        </nav>
+
+        <section class="diy-header">
+            <h2>♻️ DIY Projects</h2>
+            <p>Learn how to reduce waste through hands-on DIY projects. From organizers to planters, these ideas make recycling fun, functional, and sustainable.</p>
+        </section>
+
+        <section class="search-section">
+            <form id="searchForm" class="search-bar">
+                <i class='bx bx-search search-icon'></i>
+                <input type="text" id="searchInput" placeholder="Search for DIY Projects...">
+            </form>
+        </section>
+
+        <section class="diy-project">
+            <div class="diy-card">
+                <h3>Tin Can Organizer</h3>
+
+                <img src="Images/tincanorganiser.jpg" alt="Tin Can Organizer" class="diy-image">
+
+                <ol div class="steps">
+                    <p><strong>Materials:</strong></p>
+                    <li>Tin cans</li>
+                    <li>colorful paper or paint</li>
+                    <li>Glue</li>
+                    <li>(Optional) stickers</li>
+                </ol>
+
+                <button onclick="toggleSteps('steps-tin-can')">Show Steps</button>
+
+                <ol id="steps-tin-can" class="steps hidden">
+                    <li><input type="checkbox"> Wash and dry the tin cans thoroughly.</li>
+                    <li><input type="checkbox"> Remove sharp edges (optional: file them down).</li>
+                    <li><input type="checkbox"> Decorate with paint, paper, or washi tape.</li>
+                    <li><input type="checkbox"> Stack or glue them together in a row or pyramid.</li>
+                    <li><input type="checkbox"> Let dry and use it to organize your desk items!</li>
+                </ol>
+            </div>
+            <div class="diy-card">
+                <h3>T-Shirt Tote Bag</h3>
+
+                <img src="Images/tshirttotebag.jpg" alt="T-Shirt Tote Bag" class="diy-image">
+
+                <ol class="steps">
+                    <p><strong>Materials:</strong></p>
+                    <li>1 old T-shirt (preferably a thick cotton shirt)</li>
+                    <li>Scissors</li>
+                    <li>Needle and thread (optional, for sewing version)</li>
+                </ol>
+
+                <button onclick="toggleSteps('steps-t-shirt-tote-no-sew')">Show No-Sew Steps</button>
+                <ol id="steps-t-shirt-tote-no-sew" class="steps hidden">
+                    <h3>No-Sew Version</h3>
+                    <li><input type="checkbox"> Lay the T-shirt flat on a table.</li>
+                    <li><input type="checkbox"> Cut off the sleeves, follow the sleeve seam.</li>
+                    <li><input type="checkbox"> Cut a deeper neckline to make the bag opening.</li>
+                    <li><input type="checkbox"> Decide how deep you want the bag, then cut vertical strips (1-2cm wide) at the bottom of the shirt, front and back together.</li>
+                    <li><input type="checkbox"> Tie the front and back strips together in double knots all the way across.</li>
+                    <li><input type="checkbox"> (Optional) Tie two extra knots between each pair for a tigther bottom.</li>
+                </ol>
+
+                <button onclick="toggleSteps('steps-t-shirt-tote-sew')">Show Sewing Steps</button>
+                <ol id="steps-t-shirt-tote-sew" class="steps hidden">
+                    <h3>Sewing Version</h3>
+                    <li><input type="checkbox"> Cut off sleeves and neckline like above.</li>
+                    <li><input type="checkbox"> Turn the shirt inside out.</li>
+                    <li><input type="checkbox"> Sew a straight line across the bottom</li>
+                    <li><input type="checkbox"> Turn it back the right way.</li>
+                </ol>
+            </div>
+            <div class="diy-card">
+                <h3>Plastic Bottle Planter</h3>
+
+                <img src="Images/plantbottleplanters.jpg" alt="Plant Bottle Planter" class="diy-image">
+
+                <ol class="steps">
+                    <p><strong>Materials:</strong></p>
+                    <li>1 empty plastic bottle (any size)</li>
+                    <li>Scissors or craft knife</li>
+                    <li>Acrylic paint or permanent markers</li>
+                    <li>Soil and small plant or seeds</li>
+                    <li>(Optional) Googly eyes, twine, or stickers for decoration</li>
+                </ol>
+
+                <button onclick="toggleSteps('steps-bottle-planter')">Show Steps</button>
+                <ol id="steps-bottle-planter" class="steps hidden">
+                    <li><input type="checkbox"> Clean the bottle and remove any labels.</li>
+                    <li><input type="checkbox"> Cut the bottle in half or cut out a U-shape for an opening (depends on style).</li>
+                    <li><input type="checkbox"> Poke small holes at the bottom for drainage.</li>
+                    <li><input type="checkbox"> Decorate the outside and plant your flower, succulent, or herb.</li>
+                    <li><input type="checkbox"> (Optional) Tie a string on both ends to hang it like a hanging planter.</li>
+                </ol>
+            </div>
+            <div class="diy-card">
+                <h3>Jar Latern</h3>
+
+                <img src="Images/jarlatern.png" alt="Jar Latern" class="diy-image">
+
+                <ol class="steps">
+                    <p><strong>Materials:</strong></p>
+                    <li>Clean glass jar (e.g. jam jar or mason jar)</li>
+                    <li>Tea light or LED candle</li>
+                    <li>Wire or string (for handle/hanging, optional)</li>
+                    <li>Acrylic paint, glass markers, or tissue paper</li>
+                    <li>Glue or Mod Podge</li>
+                    <li>Paintbrush or sponge</li>
+                    <li>Decorations: glitter, lace, leaves, stickers (optional)</li>
+                </ol>
+
+                <button onclick="toggleSteps('steps-jar-latern')">Show Steps</button>
+                <ol id="steps-jar-latern" class="steps hidden">
+                    <li><input type="checkbox"> Clean and dry your glass jar thoroughly.</li>
+                    <li><input type="checkbox"> Decorate the out of the jar:</li>
+                    <li><input type="checkbox"> Let everything dry completely.</li>
+                    <li><input type="checkbox"> (Optional) Wrap wire around the jar's rim to make a handle for hanging.</li>
+                    <li><input type="checkbox"> Place a tea light or LED candle inside the jar.</li>
+                    <li><input type="checkbox"> Light it up and enjoy!</li>
+                </ol>
+            </div>
+            <div class="diy-card">
+                <h3>CD Mosaic Art</h3>
+
+                <img src="Images/cdmosaicart.png" alt="CD Mosaic Art" class="diy-image">
+
+                <ol class="steps">
+                    <p><strong>Materials:</strong></p>
+                    <li>Old or scratched CDs</li>
+                    <li>Scissors</li>
+                    <li>Strong glue</li>
+                    <li>Cardboard, canvas, wooden frame, or old photo frame (for base)</li>
+                    <li>Pencil</li>
+                    <li>(Optional) tweezers</li>
+                </ol>
+
+                <button onclick="toggleSteps('steps-cd-mosaic')">Show Steps</button>
+                <ol id="steps-cd-mosaic" class="steps hidden">
+                    <li><input type="checkbox"> Clean your old CDs to remove dust or labels</li>
+                    <li><input type="checkbox"> Cut the CDs carefully into small pieces (triangles, squares, etc.)</li>
+                    <li><input type="checkbox"> Sketch a design or pattern on your base (heart, rainbow, abstract, etc.).</li>
+                    <li><input type="checkbox"> Glue the CD pieces shiny-side-up onto the design like a mosaic.</li>
+                    <li><input type="checkbox"> (Optional) Add a background color before gluing or after finishing.</li>
+                    <li><input type="checkbox"> Let the glue dry completely before moving or hanging it.</li>
+                </ol>
+            </div>
+
+            <div class="diy-card">
+                <h3>Jar Snow Globe</h3>
+
+                <img src="Images/jarsnowglobe.jpg" alt="Jar Snow Globe" class="diy-image">
+
+                <ol class="steps">
+                    <p><strong>Materials:</strong></p>
+                    <li>1 small clear jar with a tight lid</li>
+                    <li>Small waterproof figurine or toy</li>
+                    <li>Waterproof glue or strong hot glue</li>
+                    <li>Distilled water</li>
+                    <li>Glitter (or fake snow)</li>
+                    <li>Glycerin (Optional, helps glitter float better)</li>
+                </ol>
+
+                <button onclick="toggleSteps('steps-jar-snow-globe')">Show Steps</button>
+                <ol id="steps-jar-snow-globe" class="steps hidden">
+                    <li><input type="checkbox"> Choose a small waterproof figurine and glue it to the inside of the jar lid. Let it dry completely.</li>
+                    <li><input type="checkbox"> Fill the jar almost to the top with distilled water.</li>
+                    <li><input type="checkbox"> Add a few drops of glycerin (optional), this slows the glitter falling.</li>
+                    <li><input type="checkbox"> Sprinkle in glitter (don't use too much).</li>
+                    <li><input type="checkbox"> Screw the lid on tightly. You can seal it with glue to avoid leaks.</li>
+                </ol>
+            </div>
+            <div class="diy-card">
+                <h3>Paper Roll Phone Stand</h3>
+
+                <img src="Images/paperrollstand.jpg" alt="Paper Roll Phone Stand" class="diy-image">
+
+                <ol class="steps">
+                    <p><strong>Materials:</strong></p>
+                    <li>Empty toilet paper roll</li>
+                    <li>Scissors or craft knife</li>
+                    <li>Decorative paper, paint, or washi tape</li>
+                    <li>(Optional) Push pins, buttons, or beads for legs</li>
+                </ol>
+
+                <button onclick="toggleSteps('steps-paper-roll-stand')">Show Steps</button>
+
+                <ol id="steps-paper-roll-stand" class="steps hidden">
+                    <li><input type="checkbox"> Flatten the paper roll gently to make cutting easier.</li>
+                    <li><input type="checkbox"> Cut a horizontal slit at the top, wide enough for your phone to sit in (about 1.5cm deep).</li>
+                    <li><input type="checkbox"> Decorate the outside using washi tape, paint or wrapping paper.</li>
+                    <li><input type="checkbox"> (Optional) Add 4 push pins or buttons at the bottom as legs to stabilize it.</li>
+                    <li><input type="checkbox"> Place your phone in the slit, it should sit nicely for hands-free use!</li>
+                </ol>
+            </div>
+            <div class="diy-card">
+                <h3>Egg Carton Flowers</h3>
+
+                <img src="Images/eggcartonflowers.jpg" alt="Egg Carton Flowers" class="diy-image">
+
+                <ol class="steps">
+                    <p><strong>Materials:</strong></p>
+                    <li>Empty egg cartons (paper type)</li>
+                    <li>Scissors</li>
+                    <li>Paint and brushes</li>
+                    <li>Glue</li>
+                    <li>Pipe cleaners, straw, or sticks (for stems)</li>
+                    <li>Beads or button (optional for the flower centers)</li>
+                </ol>
+
+                <button onclick="toggleSteps('steps-egg-carton-flower')">Show Steps</button>
+                <ol id="steps-egg-carton-flower" class="steps hidden">
+                    <li><input type="checkbox"> Cut out the individual cups from the egg carton.</li>
+                    <li><input type="checkbox"> Trim and shape each cup to resemble flower petals (round, pointed, or wavy edges).</li>
+                    <li><input type="checkbox"> Paint the "flowers" with bright colors and let them dry.</li>
+                    <li><input type="checkbox"> Glue a bead or button in the center (optional).</li>
+                    <li><input type="checkbox"> Attach a pipe cleaner, straw, or stick to the base as the stem.</li>
+                    <li><input type="checkbox"> Arrange them in a jar or vase as a colorful recycled bouquet!</li>
+                </ol>
+            </div>
+            <div class="diy-card">
+                <h3>Cereal Box Drawer Organizer</h3>
+
+                <img src="Images/cerealboxdrawerorganizer.jpg" alt="Cereal Box Drawer Organizer" class="diy-image">
+
+                <ol class="steps">
+                    <p><strong>Materials:</strong></p>
+                    <li>Empty cereal boxes (3 or more)</li>
+                    <li>Scissors or craft knife</li>
+                    <li>Ruler and pencil</li>
+                    <li>Decorative paper or wrapping paper</li>
+                    <li>Glue or double-sided tape</li>
+                </ol>
+
+                <button onclick="toggleSteps('steps-cereal-box-organizer')">Show Steps</button>
+                <ol id="steps-cereal-box-organizer" class="steps hidden">
+                    <li><input type="checkbox"> Cut the cereal boxes into different heights depending on what you want to store (pens, sticky notes, clips, etc).</li>
+                    <li><input type="checkbox"> Use a ruler to measure and mark lines before cutting to keep it neat.</li>
+                    <li><input type="checkbox"> Wrap the outside of each cut box with decorative paper and glue it down smoothly.</li>
+                    <li><input type="checkbox"> Arrange the boxes like puzzle pieces in a drawer (or glue them together into one unit).</li>
+                    <li><input type="checkbox"> Fill with your stationary or desk supplies!</li>
+                </ol>
+            </div>
+            <div class="diy-card">
+                <h3>Mini Garden in Plastic Bottles</h3>
+
+                <img src="Images/minigardeninplasticbottle.jpeg" alt="Mini Garden in Plasic Bottles" class="diy-image">
+
+                <ol class="steps">
+                    <p><strong>Materials:</strong></p>
+                    <li>Empty plastic bottles (1.5L or 2L)</li>
+                    <li>Scissors or a craft knife</li>
+                    <li>Soil</li>
+                    <li>Small plants, herbs, or seeds</li>
+                    <li>Acrylic paint or washi tape (optional for decorating)</li>
+                    <li>String or rope (if hanging)</li>
+                </ol>
+
+                <button onclick="toggleSteps('steps-mini-garden')">Show Steps</button>
+                <ol id="steps-mini-garden" class="steps hidden">
+                    <li><input type="checkbox"> Cut the bottle horizontally to create a long trough or cut out a side panel (like a mini planter box).</li>
+                    <li><input type="checkbox"> Poke small holes at the bottom for drainage.</li>
+                    <li><input type="checkbox"> (Optional) Decorate the outside with paint, stickers, or tape.</li>
+                    <li><input type="checkbox"> Fill with soil, then add small plants or seeds.</li>
+                    <li><input type="checkbox"> (Optional) Tie string through the ends and hang it on a balcony or window grill.</li>
+                    <li><input type="checkbox"> Water lightly and place it where it gets some sunlight.</li>
+                </ol>
+            </div>
+            <div class="diy-card">
+                <h3>Bottle Cap Magnets</h3>
+                
+                <img src="Images/bottlecapmagnets.jpg" alt="Bottle Cap Magnets" class="diy-image">
+                <ol class="steps">
+                    <p><strong>Materials:</strong></p>
+                    <li>Bottle caps (metal or plastic)</li>
+                    <li>Small decorative images or stickers</li>
+                    <li>Glue</li>
+                    <li>Magnets</li>
+                </ol>
+
+                <button onclick="toggleSteps('steps-bottle-cap-magnets')">Show Steps</button>
+                <ol id="steps-bottle-cap-magnets" class="steps hidden">
+                    <li><input type="checkbox"> Cut images to fit inside the caps.</li>
+                    <li><input type="checkbox"> Glue them in and let dry.</li>
+                    <li><input type="checkbox"> Attach a magnet to the back with glue.</li>
+                </ol>
+            </div>
+            <div class="diy-card">
+                <h3>Light Bulb Terrarium</h3>
+
+                <img src="Images/lightbulbterrarium.jpg" alt="Light Bulb Terrarium" class="diy-image">
+                <ol class="steps">
+                    <p><strong>Materials:</strong></p>
+                    <li>Burnt-out clear light bulb</li>
+                    <li>Tweezers</li>
+                    <li>Small pebbles</li>
+                    <li>Moss or tiny plant</li>
+                </ol>
+
+                <button onclick="toggleSteps('steps-light-bulb-terrarium')">Show Steps</button>
+                <ol id="steps-light-bulb-terrarium" class="steps hidden">
+                    <li><input type="checkbox"> Carefully remove the metal base and inner parts of the bulb.</li>
+                    <li><input type="checkbox"> Add pebbles and moss using tweezers.</li>
+                    <li><input type="checkbox"> Display it upright and hanging with wire.</li>
+                </ol>
+            </div>
+        </section>
+
+        <a href="index.html" class="go-back-btn"><i class="fa-solid fa-arrow-left"></i></a>
+
+        <!--Footer-->
+        <footer class="footer">
+            <div class="footer-container">
+
+                <div class="footer-section">
+                    <h3>About Recycly</h3>
+                    <p>A digital hub that encourages sustainable living by sharing recycling knowledge, practical tips, and environmental facts. It promotes daily actions that lead to a cleaner, greener future.</p>
+                </div>
+
+                <div class="footer-section">
+                    <h3>Quick Links</h3>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="howgreenareu.html">How green are you?</a></li>
+                        <li><a href="quiz.html">Quiz</a></li>
+                        <li><a href="contact.html">Contact us</a></li>
+                        <li><a href="viewmore.html">View more pages</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-section">
+                    <h3>Follow Us</h3>
+                    <div class="social-icons">
+                        <a href="https://www.instagram.com/"><i class="fab fa-instagram"></i></a>
+                        <a href="https://www.facebook.com/"><i class="fab fa-facebook"></i></a>
+                        <a href="https://x.com/"><i class="fab fa-twitter"></i></a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="footer-bottom">
+                <p>© 2025 Recycly. All rights reserved.</p>
+            </div>
+        </footer>
+
+        <script>
+            AOS.init({
+                once: false,
+                mirror: true,
+                useClassNames: true,
+                initClassName: false,
+                animatedClassName: "aos-animate"
+            });
+
+            document.addEventListener('DOMContentLoaded', function () {
+                const questionSelect = new Choices('#question-select', {
+                    placeholder: true,
+                    placeholderValue: 'This is a placeholder set in the config',
+                    searchPlaceholderValue: 'This is a search placeholder',
+                    shouldSort: false,
+                });
+            });
+        </script>
+        <script src="app.js"></script>
+    </body>
+</html>

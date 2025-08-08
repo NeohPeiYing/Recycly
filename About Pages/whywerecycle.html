@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="description" content="Recycly - Your guide to smart recycling and sustainable living. Learn how to reduce waste, recycle effectively, and embrace the 5Rs for a cleaner planet.">
+        <meta name="keywords" content="recycling, recycly, sustainable living, reduce waste, reuse, recycle, repurpose, environment, eco-friendly">
+        <meta name="author" content="Recycly">
+        <link rel="icon" href="favicon.ico" type="Image/logo.png">
+        <title>Recycly</title>
+        <!--Style.css-->
+        <link rel="stylesheet" href="style1.css">
+        <!-- AOS -->
+        <script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
+        <link href="https://unpkg.com/aos@2.3.4/dist/aos.css" rel="stylesheet">
+        <!-- Boxicons -->
+        <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+        <!--FontAwesome-->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+    </head>
+    <body>
+        <!--Top Nav Bar-->
+        <nav class="top-navbar">
+            <div class="logo">Recycly</div>
+            <div id="menuToggle" class="hamburger">☰</div>
+        </nav>
+
+        <nav id="sidebar" class="sidebar">
+            <ul class="sidebar-menu">
+                <li><a href="../index.html"><i class="bx bx-home"></i> Home</a></li>
+                <li class="dropdown">
+                    <a href="#"><i class="bx bx-info-circle"></i> About <i class='bx bx-chevron-down dropdown-icon'></i></a>
+                    <ul class="dropdown-menu">
+                        <li><a href="ourmission.html">Our Mission</a></li>
+                        <li><a href="whywerecycle.html">Why We Recycle</a></li>
+                        <li><a href="technology.html">Technology & Innovation</a></li>
+                        <li><a href="history.html">History</a></li>
+                        <li><a href="faq.html">FAQ</a></li>
+                    </ul>
+                </li>
+                <a href="../howgreenareu.html"><i class="bx bx-leaf"></i> How Green are you?</a>
+                <a href="../diy.html"><i class="bx bx-cog"></i> DIY Projects</a>
+                <li><a href="../quiz.html"><i class="bx bx-bot"></i> Quiz</a></li>
+                <li><a href="../contact.html"><i class="bx bx-envelope"></i> Contact</a></li>
+            </ul>
+        </nav>
+
+        <header class="hero mission-hero">
+            <canvas id="bubbles-canvas"></canvas>
+            <div class="hero-content">
+                <i class="fas fa-leaf fa-3x" style="color: #3a9c5d; margin-bottom: 1rem;" data-aos="fade-up"></i>
+                <h1 data-aos="fade-up">Why We Recycle</h1>
+                <p data-aos="fade-up" data-aos-delay="100">Empowering communities to make small choices that lead to big change — recycling is our shared step toward a cleaner, greener planet.</p>
+                <a href="#why-recycle" class="mission-cta" data-aos="fade-up" data-aos-delay="200">Learn More</a>
+            </div>
+        </header>
+
+        <section class="recycle-cards" id="why-recycle">
+            <div class="recycle-cards-header" data-aos="fade-up">
+                <h2>Why We Recycle</h2>
+                <p class="recycle-cards-subtitle">
+                    Recycling is more than a bin, it's a blueprint for the future. Discover how the process works, why it matters, and how discarded materials power the circular economy.
+                </p>
+            </div>
+
+            <div class="recycle-card-grid">
+                <!--Card 1-->
+                <div class="recycle-card" data-aos="fade-up">
+                    <div class="recycle-card-icon green"><i class="fas fa-cogs"></i></div>
+                    <h3>The Recycling Process</h3>
+                    <p>Recycling begins when we separate and collect materials like paper, plastic, and metal. These items are transported to facilities where they’re cleaned, sorted, and processed into raw materials. For instance, plastic becomes resin pellets, while metal is melted into sheets for reuse.</p>
+                    <p>This circular system reduces our need to extract and refine raw resources — decreasing pollution, deforestation, and habitat loss.</p>
+                    <div class="infobox green">
+                        ♻️<strong>Did you know?</strong> Recycliing on ton of plastic saves the energy equivalent of 1,000-2,000 gallons of gasoline.
+                    </div>
+                </div>
+
+                <!--Card 2-->
+                <div class="recycle-card" data-aos="fade-up" data-aos-delay="100">
+                    <div class="recycle-card-icon yellow"><i class="fas fa-leaf"></i></div>
+                    <h3>Why It Matters</h3>
+                    <p>Recycling lowers the volume of waste sent to landfills, conserving natural land and reducing greenhouse gas emissions. It conserves energy too — creating new aluminum from recycled cans takes 95% less energy than from raw ore.</p>
+                    <p>It’s a vital step in protecting the planet from the overuse of finite resources and the long-term effects of pollution.</p>
+                    <div class="infobox yellow">
+                        🌍 <strong>Fact:</strong> Recycling 1 aluminum can saves enough energy to power a TV for 3 hours.
+                    </div>
+                </div>
+
+                <div class="recycle-card" data-aos="fade-up" data-aos-delay="200">
+                    <div class="recycle-card-icon blue"><i class="fas fa-sync-alt"></i></div>
+                    <h3>From Waste to Resources</h3>
+                    <p>What we throw away isn’t trash — it’s potential. Plastic bottles can become park benches. Glass jars can be remelted endlessly. Old newspapers can become packaging materials.</p>
+                    <p>This cycle supports a regenerative economy, where waste becomes a resource, and our footprint shrinks with every reuse.</p>
+                    <div class="infobox blue">
+                        🔁 <strong>Stat:</strong> 75% of all aluminum ever produced is still in use today.
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="video-section">
+            <div class="video-content">
+                <h1>What Happens to Plastic?<span class="underline" data-aos="underline-wipe"></span></h1>
+                <p>Learn how recycling affects plastic waste and what actually happens after we throw it away.</p>
+                <div class="video-container" data-aos="fade-up">
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/_6xlNyWPpB8?si=xov4ifICTqeNuahl" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                </div>
+            </div>
+        </section>
+
+        <a href="../index.html" class="go-back-btn"><i class="fa-solid fa-arrow-left"></i></a>
+
+        <!--Footer-->
+        <footer class="footer">
+            <div class="footer-container">
+
+                <div class="footer-section">
+                    <h3>About Recycly</h3>
+                    <p>A digital hub that encourages sustainable living by sharing recycling knowledge, practical tips, and environmental facts. It promotes daily actions that lead to a cleaner, greener future.</p>
+                </div>
+
+                <div class="footer-section">
+                    <h3>Quick Links</h3>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="howgreenareu.html">How green are you?</a></li>
+                        <li><a href="quiz.html">Quiz</a></li>
+                        <li><a href="contact.html">Contact us</a></li>
+                        <li><a href="viewmore.html">View more pages</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-section">
+                    <h3>Follow Us</h3>
+                    <div class="social-icons">
+                        <a href="https://www.instagram.com/"><i class="fab fa-instagram"></i></a>
+                        <a href="https://www.facebook.com/"><i class="fab fa-facebook"></i></a>
+                        <a href="https://x.com/"><i class="fab fa-twitter"></i></a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="footer-bottom">
+                <p>© 2025 Recycly. All rights reserved.</p>
+            </div>
+        </footer>
+
+        <script>
+            AOS.init({
+                once: false,
+                mirror: true,
+                useClassNames: true,
+                initClassName: false,
+                animatedClassName: "aos-animate"
+            });
+        </script>
+        <script src="app1.js"></script>
+    </body>
+</html>

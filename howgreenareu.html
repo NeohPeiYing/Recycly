@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="description" content="Recycly - Your guide to smart recycling and sustainable living. Learn how to reduce waste, recycle effectively, and embrace the 5Rs for a cleaner planet.">
+        <meta name="keywords" content="recycling, recycly, sustainable living, reduce waste, reuse, recycle, repurpose, environment, eco-friendly">
+        <meta name="author" content="Recycly">
+        <link rel="icon" href="favicon.ico" type="Image/logo.png">
+        <title>Recycly</title>
+        <!--Style.css-->
+        <link rel="stylesheet" href="stylegreen.css">
+        <!-- AOS -->
+        <script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
+        <link href="https://unpkg.com/aos@2.3.4/dist/aos.css" rel="stylesheet">
+        <!-- Boxicons -->
+        <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+        <!--FontAwesome-->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+        <!--Drop Down Design-->
+        <!-- Choices.js CSS -->
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/choices.js/public/assets/styles/choices.min.css" />
+        <!-- Choices.js JS -->
+        <script src="https://cdn.jsdelivr.net/npm/choices.js/public/assets/scripts/choices.min.js"></script>
+    </head>
+    <body>
+        <!--Top Nav Bar-->
+        <nav class="top-navbar">
+            <div class="logo">Recycly</div>
+            <div id="menuToggle" class="hamburger">☰</div>
+        </nav>
+
+        <nav id="sidebar" class="sidebar">
+            <ul class="sidebar-menu">
+                <li><a href="index.html"><i class="bx bx-home"></i> Home</a></li>
+                <li class="dropdown">
+                    <a href="#"><i class="bx bx-info-circle"></i> About <i class='bx bx-chevron-down dropdown-icon'></i></a>
+                    <ul class="dropdown-menu">
+                        <li><a href="About Pages/ourmission.html">Our Mission</a></li>
+                        <li><a href="About Pages/whywerecycle.html">Why We Recycle</a></li>
+                        <li><a href="About Pages/technology.html">Technology & Innovation</a></li>
+                        <li><a href="About Pages/history.html">History</a></li>
+                        <li><a href="About Pages/faq.html">FAQ</a></li>
+                    </ul>
+                </li>
+                <a href="howgreenareu.html"><i class="bx bx-leaf"></i> How Green are you?</a>
+                <a href="diy.html"><i class="bx bx-cog"></i> DIY Projects</a>
+                <li><a href="quiz.html"><i class="bx bx-bot"></i> Quiz</a></li>
+                <li><a href="contact.html"><i class="bx bx-envelope"></i> Contact</a></li>
+            </ul>
+        </nav>
+
+        <section class="greentest enhanced">
+        <h1>♻️ How Green Are You?</h1>
+        <p class="intro-text">Answer these quick questions to discover your eco-friendly level!</p>
+
+        <div class="question">
+            <label for="transport">1. How do you usually travel?</label>
+            <select id="transport" required>
+                <option value="" disabled selected hidden>Select an option</option>
+                <option value="3">Car</option>
+                <option value="2">Public Transport</option>
+                <option value="1">Bicycle</option>
+                <option value="0">Walk</option>
+            </select>
+        </div>
+
+        <div class="question">
+            <label for="container">2. How often do you bring your own container or bottle?</label>
+            <select id="container" required>
+                <option value="" disabled selected hidden>Select an option</option>
+                <option value="3">Never</option>
+                <option value="2">Rarely</option>
+                <option value="1">Sometimes</option>
+                <option value="0">Always</option>
+            </select>
+        </div>
+
+        <div class="question">
+            <label for="recycle">3. Do you separate your trash (recycle)?</label>
+            <select id="recycle" required>
+                <option value="" disabled selected hidden>Select an option</option>
+                <option value="0">I recycle everything</option>
+                <option value="1">I try to recycle</option>
+                <option value="2">Sometimes I forget</option>
+                <option value="3">I don't recycle</option>
+            </select>
+        </div>
+
+        <div class="question">
+            <label for="electricity">4. At home, do you save electricity?</label>
+            <select id="electricity" required>
+                <option value="" disabled selected hidden>Select an option</option>
+                <option value="0">Always</option>
+                <option value="1">Sometimes</option>
+                <option value="2">Not really</option>
+                <option value="3">Everything's always on</option>
+            </select>
+        </div>
+
+        <div class="question">
+            <label for="plastic">5. What do you do with old plastic containers or items?</label>
+            <select id="plastic" required>
+                <option value="" disabled selected hidden>Select an option</option>
+                <option value="3">Throw them away</option>
+                <option value="2">Keep but don't reuse</option>
+                <option value="1">Reuse them a few times</option>
+                <option value="0">Reuse or repurpose them regularly</option>
+            </select>
+        </div>
+
+        <button onclick="calculate()">See My Green Level</button>
+        <div id="result"></div>
+    </section>
+
+    <a href="index.html" class="go-back-btn"><i class="fa-solid fa-arrow-left"></i></a>
+
+    <!--Footer-->
+    <footer class="footer">
+        <div class="footer-container">
+
+            <div class="footer-section">
+                <h3>About Recycly</h3>
+                <p>A digital hub that encourages sustainable living by sharing recycling knowledge, practical tips, and environmental facts. It promotes daily actions that lead to a cleaner, greener future.</p>
+            </div>
+
+            <div class="footer-section">
+                <h3>Quick Links</h3>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="howgreenareu.html">How green are you?</a></li>
+                    <li><a href="quiz.html">Quiz</a></li>
+                    <li><a href="contact.html">Contact us</a></li>
+                    <li><a href="viewmore.html">View more pages</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-section">
+                <h3>Follow Us</h3>
+                <div class="social-icons">
+                    <a href="https://www.instagram.com/"><i class="fab fa-instagram"></i></a>
+                    <a href="https://www.facebook.com/"><i class="fab fa-facebook"></i></a>
+                    <a href="https://x.com/"><i class="fab fa-twitter"></i></a>
+                </div>
+            </div>
+        </div>
+
+        <div class="footer-bottom">
+            <p>© 2025 Recycly. All rights reserved.</p>
+        </div>
+    </footer>
+
+        <script>
+            AOS.init({
+                once: false,
+                mirror: true,
+                useClassNames: true,
+                initClassName: false,
+                animatedClassName: "aos-animate"
+            });
+        </script>
+        <script src="app.js"></script>
+    </body>
+</html>

@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="description" content="Recycly - Your guide to smart recycling and sustainable living. Learn how to reduce waste, recycle effectively, and embrace the 5Rs for a cleaner planet.">
+        <meta name="keywords" content="recycling, recycly, sustainable living, reduce waste, reuse, recycle, repurpose, environment, eco-friendly">
+        <meta name="author" content="Recycly">
+        <link rel="icon" href="favicon.ico" type="Image/logo.png">
+        <title>Recycly</title>
+        <!--Style.css-->
+        <link rel="stylesheet" href="style.css">
+        <!-- AOS -->
+        <script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
+        <link href="https://unpkg.com/aos@2.3.4/dist/aos.css" rel="stylesheet">
+        <!-- Boxicons -->
+        <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+        <!--FontAwesome-->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+    </head>
+    <body>
+        <!--Top Nav Bar-->
+        <nav class="top-navbar">
+            <div class="logo">Recycly</div>
+            <div id="menuToggle" class="hamburger">☰</div>
+        </nav>
+
+        <nav id="sidebar" class="sidebar">
+            <ul class="sidebar-menu">
+                <li><a href="index.html"><i class="bx bx-home"></i> Home</a></li>
+                <li class="dropdown">
+                    <a href="#"><i class="bx bx-info-circle"></i> About <i class='bx bx-chevron-down dropdown-icon'></i></a>
+                    <ul class="dropdown-menu">
+                        <li><a href="About Pages/ourmission.html">Our Mission</a></li>
+                        <li><a href="About Pages/whywerecycle.html">Why We Recycle</a></li>
+                        <li><a href="About Pages/technology.html">Technology & Innovation</a></li>
+                        <li><a href="About Pages/history.html">History</a></li>
+                        <li><a href="About Pages/faq.html">FAQ</a></li>
+                    </ul>
+                </li>
+                <a href="howgreenareu.html"><i class="bx bx-leaf"></i> How Green are you?</a>
+                <a href="diy.html"><i class="bx bx-cog"></i> DIY Projects</a>
+                <li><a href="quiz.html"><i class="bx bx-bot"></i> Quiz</a></li>
+                <li><a href="contact.html"><i class="bx bx-envelope"></i> Contact</a></li>
+            </ul>
+        </nav>
+
+            <section class="quiz-section">
+                <div class="quiz-container">
+                    <h1>Recycle Quiz</h1>
+                    <form id="quizForm">
+                        <div class="question">
+                            <p>1. What color is usually used for recycling bins?</p>
+                            <label><input type="radio" name="q1" value="a"> Green</label><br>
+                            <label><input type="radio" name="q1" value="b"> Pink</label><br>
+                            <label><input type="radio" name="q1" value="c"> Purple</label>
+                        </div>
+
+                        <div class="question">
+                            <p>2. What should you do with empty plastic bottles?</p>
+                            <label><input type="radio" name="q2" value="a"> Throw them anywhere</label><br>
+                            <label><input type="radio" name="q2" value="b"> Recycle them</label><br>
+                            <label><input type="radio" name="q2" value="c"> Burn them</label>
+    
+                    </div>
+
+                    <div class="question">
+                        <p>3. What does the “R” in 3Rs stand for?</p>
+                        <label><input type="radio" name="q3" value="a"> Run</label><br>
+                        <label><input type="radio" name="q3" value="b"> Rest</label><br>
+                        <label><input type="radio" name="q3" value="c"> Reduce</label>
+                    </div>
+
+                    <div class="question">
+                        <p>4. What do trees produce for us to breathe?</p>
+                        <label><input type="radio" name="q4" value="a"> Smoke</label><br>
+                        <label><input type="radio" name="q4" value="b"> Plastic</label><br>
+                        <label><input type="radio" name="q4" value="c"> Oxygen</label>
+                    </div>
+
+                    <div class="question">
+                        <p>5. Where should food waste go?</p>
+                        <label><input type="radio" name="q5" value="a"> In the ocean</label><br>
+                        <label><input type="radio" name="q5" value="b"> Compost</label><br>
+                        <label><input type="radio" name="q5" value="c"> Plastic Bag</label><br>
+                    </div>
+
+                    <div class="question">
+                        <p>6. What is made from recycled paper?</p>
+                        <label><input type="radio" name="q6" value="a"> New paper</label><br>
+                        <label><input type="radio" name="q6" value="b"> Glass</label><br>
+                        <label><input type="radio" name="q6" value="a"> Metal</label><br>
+                    </div>
+
+                    <div class="question">
+                        <p>7. Which of these should go into compost?</p>
+                        <label><input type="radio" name="q7" value="a"> Banana peel</label><br>
+                        <label><input type="radio" name="q7" value="b"> Plastic spoon</label><br>
+                        <label><input type="radio" name="q7" value="c"> Aluminum can</label><br>
+                    </div>
+
+                    <div class="question">
+                        <p>8. What does “reuse” mean?</p>
+                        <label><input type="radio" name="q8" value="a"> Use something once</label><br>
+                        <label><input type="radio" name="q8" value="b"> Use something again</label><br>
+                        <label><input type="radio" name="q8" value="c"> Throw away quickly</label><br>
+                    </div>
+
+                    <div class="question">
+                        <p>9. Turning old bottles into new ones is called?</p>
+                        <label><input type="radio" name="q9" value="a"> Reusing</label><br>
+                        <label><input type="radio" name="q9" value="b"> Recycling</label><br>
+                        <label><input type="radio" name="q9" value="c"> Wasting</label><br>
+                    </div>
+
+                    <div class="question">
+                        <p>10. Which of these saves energy?</p>
+                        <label><input type="radio" name="q10" value="a"> Leaving lights on</label><br>
+                        <label><input type="radio" name="q10" value="b"> Turning lights off when not needed</label><br>
+                        <label><input type="radio" name="q10" value="c"> Using plastic bags</label><br>
+                    </div>
+
+                    <button id="submitBtn" type="button" onclick="checkQuiz()">Submit</button>
+                    <button id="restartBtn" type="button" onclick="restartQuiz()" style="display: none;">Restart</button>
+                </form>
+            </div>
+        </section>
+
+    <a href="index.html" class="go-back-btn"><i class="fa-solid fa-arrow-left"></i></a>
+
+    <!--Footer-->
+    <footer class="footer">
+        <div class="footer-container">
+
+            <div class="footer-section">
+                <h3>About Recycly</h3>
+                <p>A digital hub that encourages sustainable living by sharing recycling knowledge, practical tips, and environmental facts. It promotes daily actions that lead to a cleaner, greener future.</p>
+            </div>
+
+            <div class="footer-section">
+                <h3>Quick Links</h3>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="howgreenareu.html">How green are you?</a></li>
+                    <li><a href="quiz.html">Quiz</a></li>
+                    <li><a href="contact.html">Contact us</a></li>
+                    <li><a href="viewmore.html">View more pages</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-section">
+                <h3>Follow Us</h3>
+                <div class="social-icons">
+                    <a href="https://www.instagram.com/"><i class="fab fa-instagram"></i></a>
+                    <a href="https://www.facebook.com/"><i class="fab fa-facebook"></i></a>
+                    <a href="https://x.com/"><i class="fab fa-twitter"></i></a>
+                </div>
+            </div>
+        </div>
+
+        <div class="footer-bottom">
+            <p>© 2025 Recycly. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script>
+            AOS.init({
+                once: false,
+                mirror: true,
+                useClassNames: true,
+                initClassName: false,
+                animatedClassName: "aos-animate"
+            });
+    </script>
+    <script src="app.js"></script>
+    </body>
+</html>
