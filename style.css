@@ -225,6 +225,7 @@ section {
 
 .hero {
     height: 100vh;
+    margin-top: -3rem;
     background: 
         linear-gradient(rgba(46, 125, 78, 0.6), rgba(46, 125, 78, 0.6)),
         url('Images/headerbg.png') center/cover no-repeat;
@@ -1367,3 +1368,4 @@ button:hover {
   transform: scale(1.1);
 
 }
+
