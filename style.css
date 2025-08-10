@@ -55,15 +55,6 @@ section {
 
 /* Background Canvas */
 
-#background-canvas {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    z-index: -1;
-}
-
 #bubbles-canvas {
     position: absolute;
     top: 0;
@@ -285,34 +276,6 @@ section {
 @keyframes pulse {
     0%, 100% { transform: scale(1); }
     50% { transform: scale(1.05); }
-}
-
-.scroll-indicator {
-    position: relative;
-    width: 30px;
-    height: 50px;
-    border: 2px solid #fff;
-    border-radius: 15px;
-    opacity: 0.8;
-    background: rgba(255, 255, 255, 0.2);
-    margin: 2rem auto 0 auto;
-}
-
-.scroll-indicator span {
-    position: absolute;
-    top: 10px;
-    left: 50%;
-    transform: translateX(-50%);
-    width: 4px;
-    height: 10px;
-    background: #fff;
-    border-radius: 2px;
-    animation: scroll 2s infinite;
-}
-
-@keyframes scroll {
-    0% { top: 10px; opacity: 1; }
-    100% { top: 25px; opacity: 0; }
 }
 
 /* Five R's Section */
@@ -1402,4 +1365,5 @@ button:hover {
   margin-right: 8px;
   accent-color: #48b46d;
   transform: scale(1.1);
+
 }
