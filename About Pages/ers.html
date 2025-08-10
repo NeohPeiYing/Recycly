@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="description" content="Recycly - Your guide to smart recycling and sustainable living. Learn how to reduce waste, recycle effectively, and embrace the 5Rs for a cleaner planet.">
+        <meta name="keywords" content="recycling, recycly, sustainable living, reduce waste, reuse, recycle, repurpose, environment, eco-friendly">
+        <meta name="author" content="Recycly">
+        <link rel="icon" href="favicon.ico" type="Image/logo.png">
+        <title>Recycly</title>
+        <!--Style.css-->
+        <link rel="stylesheet" href="style1.css">
+        <!-- AOS -->
+        <script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
+        <link href="https://unpkg.com/aos@2.3.4/dist/aos.css" rel="stylesheet">
+        <!-- Boxicons -->
+        <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+        <!--FontAwesome-->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+        <!--Chart.js-->
+        <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    </head>
+    <body>
+        <!--Top Nav Bar-->
+        <nav class="top-navbar">
+            <div class="logo">Recycly</div>
+            <div id="menuToggle" class="hamburger">☰</div>
+        </nav>
+
+        <nav id="sidebar" class="sidebar">
+            <ul class="sidebar-menu">
+                <li><a href="../index.html"><i class="bx bx-home"></i> Home</a></li>
+                <li class="dropdown">
+                    <a href="#"><i class="bx bx-info-circle"></i> About <i class='bx bx-chevron-down dropdown-icon'></i></a>
+                    <ul class="dropdown-menu">
+                        <li><a href="ourmission.html">Our Mission</a></li>
+                        <li><a href="whywerecycle.html">Why We Recycle</a></li>
+                        <li><a href="technology.html">Technology & Innovation</a></li>
+                        <li><a href="history.html">History</a></li>
+                        <li><a href="faq.html">FAQ</a></li>
+                    </ul>
+                </li>
+                <a href="../howgreenareu.html"><i class="bx bx-leaf"></i> How Green are you?</a>
+                <a href="../diy.html"><i class="bx bx-cog"></i> DIY Projects</a>
+                <li><a href="../quiz.html"><i class="bx bx-bot"></i> Quiz</a></li>
+                <li><a href="../contact.html"><i class="bx bx-envelope"></i> Contact</a></li>
+            </ul>
+        </nav>
+
+        <header class="hero article-hero">
+            <div class="hero-content">
+                <i class="fa-solid fa-bolt fa-3x" style="color: #3a9c5d;"></i>
+                <h1>Energy Recovery Systems</h1>
+                <p>Turning trash into clean energy for a sustainable future</p>
+            </div>
+        </header>
+
+        <section class="article-chart">
+            <h2>CO₂ Emissions by Waste Treatment Method</h2>
+            <canvas id="emissionsChart" width="400" height="200"></canvas>
+        </section>
+
+        <section class="article-section">
+            <p>
+                Recycling isn’t always possible — not all materials can be reused or repurposed. But that doesn’t mean they have to go to waste. Thanks to <strong>energy recovery systems</strong>, even trash that can’t be recycled can still serve a valuable purpose: generating energy.
+            </p>
+            <p>
+                Energy recovery is the process of converting <strong>non-recyclable waste</strong> into usable forms of energy, such as electricity, heat, or fuel. This is typically done through technologies like <strong>incineration, gasification</strong>, and <strong>pyrolysis</strong>, which break down waste materials into energy-rich gases or oils.
+            </p>
+            <p>
+                One of the most common methods is <strong></strong>waste-to-energy incineration</strong>, where garbage is burned in controlled, high-temperature environments. The heat released from the process is used to generate steam, which powers turbines and produces electricity — similar to how coal-fired plants work, but using trash instead of fossil fuels.
+            </p>
+            <p>
+                Newer and more advanced methods like <strong>gasification</strong> and <strong>pyrolysis</strong> avoid direct combustion. Instead, they apply heat and pressure in low-oxygen environments to convert waste into <strong>syngas</strong> (synthetic gas), bio-oils, or char — all of which can be used as fuel sources. These systems are not only more efficient, but also produce fewer harmful emissions than traditional incineration.
+            </p>
+            <p>
+                Energy recovery helps reduce our dependence on fossil fuels and landfills at the same time. It also lowers greenhouse gas emissions by capturing energy from waste that would otherwise rot in landfills and release methane — a powerful climate pollutant.
+            </p>
+            <p>
+                Of course, energy recovery isn’t a silver bullet. These systems still produce emissions, require proper sorting to prevent contamination, and work best when paired with strong recycling and composting programs. But in cases where recycling isn’t possible, energy recovery offers a <strong>cleaner, smarter alternative to landfill dumping.</strong>
+            </p>
+            <p>
+                Around the world, cities and countries are already embracing this approach. In Sweden, for example, waste-to-energy plants power homes and even import trash from other countries to convert into electricity. In Japan, ultra-clean incineration systems are helping reduce landfill usage and create usable building materials from ash byproducts.
+            </p>
+            <p>
+                As technology advances, energy recovery systems are becoming cleaner, more compact, and more efficient. They’re a key piece of the larger puzzle of sustainable waste management — giving trash a second life, and powering the future from what we throw away.
+            </p>
+        </section>
+
+        <a href="technology.html" class="go-back-btn-tech"><i class="fa-solid fa-arrow-left"></i></a>
+
+        <!--Footer-->
+        <footer class="footer">
+            <div class="footer-container">
+
+                <div class="footer-section">
+                    <h3>About Recycly</h3>
+                    <p>A digital hub that encourages sustainable living by sharing recycling knowledge, practical tips, and environmental facts. It promotes daily actions that lead to a cleaner, greener future.</p>
+                </div>
+
+                <div class="footer-section">
+                    <h3>Quick Links</h3>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="howgreenareu.html">How green are you?</a></li>
+                        <li><a href="quiz.html">Quiz</a></li>
+                        <li><a href="contact.html">Contact us</a></li>
+                        <li><a href="viewmore.html">View more pages</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-section">
+                    <h3>Follow Us</h3>
+                    <div class="social-icons">
+                        <a href="https://www.instagram.com/"><i class="fab fa-instagram"></i></a>
+                        <a href="https://www.facebook.com/"><i class="fab fa-facebook"></i></a>
+                        <a href="https://x.com/"><i class="fab fa-twitter"></i></a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="footer-bottom">
+                <p>© 2025 Recycly. All rights reserved.</p>
+            </div>
+        </footer>
+
+        <script>
+            AOS.init({
+                once: false,
+                mirror: true,
+                useClassNames: true,
+                initClassName: false,
+                animatedClassName: "aos-animate"
+            });
+
+            const ctx = document.getElementById('emissionsChart').getContext('2d');
+            new Chart(ctx, {
+                type: 'bar',
+                data: {
+                    labels: ['Landfilling', 'Incineration', 'Gasification', 'Pryolysis'],
+                    datasets: [{
+                        label: 'Carbon Emissions (in kg CO₂e)',
+                        data: ['800', '400', '250', '200'],
+                        backgroundColor: ['#7A1900', '#FF9D00', '#FBFF00', '#00FF15']
+                    }]
+                },
+                options: {
+                    scales: {
+                        y: {
+                            beginAtZero: true,
+                            max: 800
+                        }
+                    }
+                }
+            })
+        </script>
+        <script src="app1.js"></script>
+    </body>
+</html>
