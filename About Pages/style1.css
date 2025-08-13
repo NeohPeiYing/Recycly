@@ -1040,31 +1040,46 @@ section {
     border-radius: 10px;
     box-shadow: 0 4px 20px rgba(0,0,0,0.1);
 }
+
 .image-slider .slide {
     display: none;
 }
+
 .image-slider .slide.active {
     display: block;
 }
+
 .image-slider img {
     width: 100%;
     display: block;
 }
+
+.slider-buttons span {
+    cursor: pointer;
+    font-size: 1.5rem;
+    color: white;
+    background: rgba(58, 156, 93, 0.8); /* greenish to match theme */
+    padding: 0.6rem 0.9rem;
+    border-radius: 50%;
+    transition: background 0.3s ease, transform 0.2s ease;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.3);
+    user-select: none;
+}
+
+.slider-buttons span:hover {
+    background: rgba(46, 125, 78, 0.9);
+    transform: scale(1.1);
+}
+
 .slider-buttons {
     position: absolute;
     top: 50%;
     width: 100%;
+    padding: 0 1rem;
     display: flex;
     justify-content: space-between;
+    align-items: center;
     transform: translateY(-50%);
-}
-.slider-buttons span {
-    cursor: pointer;
-    font-size: 2rem;
-    color: white;
-    background: rgba(0,0,0,0.3);
-    padding: 0.5rem;
-    border-radius: 50%;
 }
 
 /* History Page mobile responsiveness */
