@@ -1030,6 +1030,43 @@ section {
     transform: scale(1.1);
 }
 
+/* Image Slider */
+
+.image-slider {
+    max-width: 800px;
+    margin: 2rem auto;
+    position: relative;
+    overflow: hidden;
+    border-radius: 10px;
+    box-shadow: 0 4px 20px rgba(0,0,0,0.1);
+}
+.image-slider .slide {
+    display: none;
+}
+.image-slider .slide.active {
+    display: block;
+}
+.image-slider img {
+    width: 100%;
+    display: block;
+}
+.slider-buttons {
+    position: absolute;
+    top: 50%;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    transform: translateY(-50%);
+}
+.slider-buttons span {
+    cursor: pointer;
+    font-size: 2rem;
+    color: white;
+    background: rgba(0,0,0,0.3);
+    padding: 0.5rem;
+    border-radius: 50%;
+}
+
 /* History Page mobile responsiveness */
 
 @media (max-width: 768px) {
