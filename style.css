@@ -118,6 +118,12 @@ section {
     color: #111;
     font-weight: 700;
     font-size: 1.4rem;
+    transition: color 0.3s ease;
+}
+
+.logo:hover {
+    color: #4CAF50;
+    cursor: pointer;
 }
 
 .hamburger {
