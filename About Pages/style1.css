@@ -70,6 +70,7 @@ section {
     color: #111;
     font-weight: 700;
     font-size: 1.4rem;
+    text-decoration: none;
     transition: color 0.3s ease;
 }
 
