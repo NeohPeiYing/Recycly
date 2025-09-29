@@ -87,12 +87,16 @@ section {
     color: #111;
     font-weight: 700;
     font-size: 1.4rem;
+    transition: color 0.3s ease, transform 0.3s ease;
+}
+
+.logo a {
     text-decoration: none;
-    transition: color 0.3s ease;
 }
 
 .logo:hover {
     color: #4CAF50;
+    transform: scale(1.05);
     cursor: pointer;
 }
 
