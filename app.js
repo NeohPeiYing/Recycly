@@ -275,9 +275,16 @@ function calculate() {
 
   const result = document.getElementById('result');
   result.innerHTML = `
-    <strong>Your score is:</strong> ${total} (${level})<br><br>${message}<br><br>
-    <button id="suggestBtn" class="learn-more-button">View Suggestions</button>
-  `;
+  <div style="line-height: 1.6;">
+    <strong>Your score is:</strong> ${total} (${level})
+  </div>
+  <p style="margin-top: 0.6rem;">${message}</p>
+  <div style="margin-top: 0.5rem;">
+    <button id="suggestBtn" class="learn-more-button" style="padding: 0.6rem 1.4rem; border-radius: 8px;">
+      View Suggestions
+    </button>
+  </div>
+`;
 
   document.getElementById("suggestBtn").addEventListener("click", () => {
     window.location.href = page;
