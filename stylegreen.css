@@ -460,3 +460,9 @@ section {
   display: block;
   margin-bottom: 0.4rem;
 }
+
+.tip-card i {
+    font-size: 3rem;
+    color: #48b46d;
+    margin-bottom: 1rem;
+}
