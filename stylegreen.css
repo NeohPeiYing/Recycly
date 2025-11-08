@@ -402,29 +402,47 @@ section {
     border-top: 1px solid #333;
 }
 
+/* Tip Cards */
+.tip-cards {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 1rem;
+  margin-top: 1.5rem;
+}
+
+.tip-card {
+  width: 230px;
+  background-color: #ffffff;
+  border: 1.5px solid #a9dfbf; /* light green border */
+  border-radius: 12px;
+  padding: 1rem;
+  text-align: left;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.tip-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 4px 10px rgba(46, 125, 78, 0.15);
+}
+
+.tip-card i {
+  font-size: 1.6rem;
+  color: var(--primary-green);
+  margin-bottom: 0.5rem;
+  display: block;
+  text-align: center;
+}
+
 .tip-card p {
-  font-size: 0.95rem;
+  font-size: 0.9rem;
   color: #2e7d4e;
-  line-height: 1.5;
+  line-height: 1.4;
 }
 
 .tip-card strong {
   color: var(--primary-green);
-}
-
-.tip-card {
-  background: #f9fff9;
-  border: 3px solid #a8e6a1;
-  border-radius: 15px;
-  padding: 1.5rem;
-  text-align: center;
-  transition: transform 0.3s ease, background 0.3s ease, box-shadow 0.3s ease;
-  cursor: pointer;
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
-}
-
-.tip-card:hover {
-  background: #e7fbe7;
-  transform: scale(1.05);
-  border-color: #5ac75a;
+  font-size: 1rem;
+  display: block;
+  margin-bottom: 0.4rem;
 }
