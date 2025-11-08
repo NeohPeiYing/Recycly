@@ -421,8 +421,10 @@ section {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
+  align-items: center;
   gap: 1rem;
   margin-top: 1.5rem;
+  overflow: visible;
 }
 
 .tip-card {
@@ -438,8 +440,9 @@ section {
 }
 
 .tip-card:hover {
-    transform: scale(1.05);
+    transform: translateY(-6px);
     box-shadow: 0 4px 10px rgba(46, 125, 78, 0.15);
+    z-index: 1;
 }
 
 .tip-card i {
