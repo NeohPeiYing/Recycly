@@ -401,3 +401,13 @@ section {
     color: #ffffff;
     border-top: 1px solid #333;
 }
+
+.tip-card p {
+  font-size: 0.95rem;
+  color: #2e7d4e;
+  line-height: 1.5;
+}
+
+.tip-card strong {
+  color: var(--primary-green);
+}

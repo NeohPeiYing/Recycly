@@ -234,7 +234,13 @@ function calculate() {
   const electricity = document.getElementById('electricity').value;
   const plastic = document.getElementById('plastic').value;
 
-  if (transport === "" || container === "" || recycle === "" || electricity === "") {
+  if (
+    transport === "" ||
+    container === "" ||
+    recycle === "" ||
+    electricity === "" ||
+    plastic === ""
+  ) {
     document.getElementById('result').innerHTML = `
       <strong>Your score is:</strong> ❓ (Unanswered questions)<br><br>
       Please answer all the questions above to see your Green Level.
@@ -242,21 +248,40 @@ function calculate() {
     return;
   }
 
-  const total = parseInt(transport) + parseInt(container) + parseInt(recycle) + parseInt(electricity) + parseInt(plastic);
+  const total =
+    parseInt(transport) +
+    parseInt(container) +
+    parseInt(recycle) +
+    parseInt(electricity) +
+    parseInt(plastic);
 
   let level = "";
-  if (total <= 3) level = "🟢 Low";
-  else if (total <= 6) level = "🟡 Medium";
-  else level = "🔴 High";
+  let message = "";
+  let page = "";
 
-  let tips = "";
-  if (level === "🟢 Low") tips = "Great job! Keep doing what you're doing.";
-  else if (level === "🟡 Medium") tips = "You're doing okay! Try walking more, cutting down on electricity, and recycling more often.";
-  else tips = "There's room to improve. Start with small changes like recycling regularly and saving energy at home.";
+  if (total <= 4) {
+    level = "🟢 Low Level";
+    message = "Amazing! You're very eco-friendly!";
+    page = "suggest-low.html";
+  } else if (total <= 9) {
+    level = "🟡 Medium Level";
+    message = "You're doing well, but there's still room to improve!";
+    page = "suggest-medium.html";
+  } else {
+    level = "🔴 High Level";
+    message = "You can start making small eco-friendly changes today!";
+    page = "suggest-high.html";
+  }
 
-  document.getElementById('result').innerHTML = `
-    <strong>Your score is:</strong> ${total} (${level})<br><br>${tips}
+  const result = document.getElementById('result');
+  result.innerHTML = `
+    <strong>Your score is:</strong> ${total} (${level})<br><br>${message}<br><br>
+    <button id="suggestBtn" class="learn-more-button">View Suggestions</button>
   `;
+
+  document.getElementById("suggestBtn").addEventListener("click", () => {
+    window.location.href = page;
+  });
 }
 
 window.addEventListener('load', () => {
