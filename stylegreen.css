@@ -403,6 +403,20 @@ section {
 }
 
 /* Tip Cards */
+
+.suggestion-text h1 {
+    text-align: center;
+    color: #4CAF50;
+    margin-bottom: 0.5rem;
+    font-size: 2rem;
+}
+
+.intro-text {
+    text-align: center;
+    font-size: 1rem;
+    color: #555;
+    margin-bottom: 2rem;
+}
 .tip-cards {
   display: flex;
   flex-wrap: wrap;
