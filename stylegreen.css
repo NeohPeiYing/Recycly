@@ -429,7 +429,7 @@ section {
 
 .tip-card {
   width: 230px;
-  height: 250px;
+  height: 340px;
   background-color: #ffffff;
   border: 1.5px solid #a9dfbf;
   border-radius: 12px;
@@ -465,6 +465,7 @@ section {
   font-size: 0.9rem;
   color: #2e7d4e;
   line-height: 1.4;
+  text-align: center;
 }
 
 .tip-card i {
