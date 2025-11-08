@@ -411,3 +411,20 @@ section {
 .tip-card strong {
   color: var(--primary-green);
 }
+
+.tip-card {
+  background: #f9fff9;
+  border: 3px solid #a8e6a1;
+  border-radius: 15px;
+  padding: 1.5rem;
+  text-align: center;
+  transition: transform 0.3s ease, background 0.3s ease, box-shadow 0.3s ease;
+  cursor: pointer;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+}
+
+.tip-card:hover {
+  background: #e7fbe7;
+  transform: scale(1.05);
+  border-color: #5ac75a;
+}
