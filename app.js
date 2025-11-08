@@ -442,39 +442,56 @@ window.addEventListener('DOMContentLoaded', () => {
   });
 });
 
-let diyIdeas = [
-  "Tin Can Organizer",
-  "T-Shirt Tote Bag",
-  "Plastic Bottle Planter",
-  "Jar Latern",
-  "CD Mosaic Art",
-  "Jar Snow Globe",
-  "Paper Roll Phone Stand",
-  "Egg Carton Flowers",
-  "Cereal Box Drawer Organizer",
-  "Mini Garden in Plastic Bottles",
-  "Bottle Cap Magnets",
-  "Light Bulb Terrarium"
-];
+document.addEventListener("DOMContentLoaded", () => {
+  document.getElementById("searchForm").addEventListener("submit", e => e.preventDefault());
 
-let searchBar = document.getElementById("searchBar");
-let results = document.getElementById("results");
+  const ideas = [
+    "Tin Can Organizer",
+    "T-Shirt Tote Bag",
+    "Plastic Bottle Planter",
+    "Jar Latern",
+    "CD Mosaic Art",
+    "Jar Snow Globe",
+    "Paper Roll Phone Stand",
+    "Egg Carton Flowers",
+    "Cereal Box Drawer Organizer",
+    "Mini Garden in Plastic Bottles",
+    "Bottle Cap Magnets",
+    "Light Bulb Terrarium"
+  ];
 
-searchBar.oninput = function() {
-  let input = this.value.toLowerCase();
-  results.innerHTML = "";
+  const input = document.getElementById("searchInput");
+  const box = document.getElementById("suggestions");
+  const cards = document.querySelectorAll(".diy-card");
 
-  if (input === "") return;
+  input.addEventListener("input", () => {
+    const val = input.value.toLowerCase();
+    box.innerHTML = "";
 
-  diyIdeas.forEach(item => {
-    if (item.toLowerCase().includes(input)) {
-      let div = document.createElement("div");
-      div.textContent = item;
-      div.onclick = function() {
-        searchBar.value = item;
-        results.innerHTML = "";
-      };
-      results.appendChild(div);
+    if (val === "") {
+      box.style.display = "none";
+      cards.forEach(c => c.style.display = "");
+      return;
     }
+
+    const results = ideas.filter(i => i.toLowerCase().includes(val));
+    if (results.length === 0) { box.style.display = "none"; return; }
+
+    results.forEach(r => {
+      const div = document.createElement("div");
+      div.textContent = r;
+      div.classList.add("suggestion-item");
+      div.onclick = () => {
+        input.value = r;
+        box.style.display = "none";
+        cards.forEach(c => {
+          const title = c.querySelector("h3").innerText.toLowerCase();
+          c.style.display = title.includes(r.toLowerCase()) ? "" : "none";
+        });
+      };
+      box.appendChild(div);
+    });
+
+    box.style.display = "block";
   });
-};
+});
