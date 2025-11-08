@@ -429,6 +429,7 @@ section {
 
 .tip-card {
   width: 230px;
+  height: 250px;
   background-color: #ffffff;
   border: 1.5px solid #a9dfbf;
   border-radius: 12px;
