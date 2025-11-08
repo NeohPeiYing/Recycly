@@ -441,3 +441,40 @@ window.addEventListener('DOMContentLoaded', () => {
     });
   });
 });
+
+let diyIdeas = [
+  "Tin Can Organizer",
+  "T-Shirt Tote Bag",
+  "Plastic Bottle Planter",
+  "Jar Latern",
+  "CD Mosaic Art",
+  "Jar Snow Globe",
+  "Paper Roll Phone Stand",
+  "Egg Carton Flowers",
+  "Cereal Box Drawer Organizer",
+  "Mini Garden in Plastic Bottles",
+  "Bottle Cap Magnets",
+  "Light Bulb Terrarium"
+];
+
+let searchBar = document.getElementById("searchBar");
+let results = document.getElementById("results");
+
+searchBar.oninput = function() {
+  let input = this.value.toLowerCase();
+  results.innerHTML = "";
+
+  if (input === "") return;
+
+  diyIdeas.forEach(item => {
+    if (item.toLowerCase().includes(input)) {
+      let div = document.createElement("div");
+      div.textContent = item;
+      div.onclick = function() {
+        searchBar.value = item;
+        results.innerHTML = "";
+      };
+      results.appendChild(div);
+    }
+  });
+};

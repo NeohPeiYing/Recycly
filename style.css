@@ -1376,4 +1376,24 @@ button:hover {
 
 }
 
+#results {
+  background: #fff;
+  border: 1px solid #a9dfbf;
+  border-radius: 8px;
+  width: 230px;
+  margin-top: 4px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  position: absolute;
+  z-index: 99;
+}
 
+#results div {
+  padding: 8px 10px;
+  cursor: pointer;
+  color: #2e7d4e;
+  font-size: 0.95rem;
+}
+
+#results div:hover {
+  background-color: #e9fbe6;
+}
