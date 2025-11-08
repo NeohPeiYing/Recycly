@@ -428,37 +428,39 @@ section {
 .tip-card {
   width: 230px;
   background-color: #ffffff;
-  border: 1.5px solid #a9dfbf; /* light green border */
+  border: 1.5px solid #a9dfbf;
   border-radius: 12px;
   padding: 1rem;
   text-align: left;
   transition: transform 0.2s ease, box-shadow 0.2s ease;
+  display: inline-block;
+  will-change: transform;
 }
 
 .tip-card:hover {
-  transform: translateY(-4px);
-  box-shadow: 0 4px 10px rgba(46, 125, 78, 0.15);
+    transform: scale(1.05);
+    box-shadow: 0 4px 10px rgba(46, 125, 78, 0.15);
 }
 
 .tip-card i {
   font-size: 1.6rem;
-  color: var(--primary-green);
+  color: #48b46d;
   margin-bottom: 0.5rem;
   display: block;
   text-align: center;
+}
+
+.tip-card h2 {
+    color: #48b46d;
+    font-size: 1.1rem;
+    text-align: center;
+    margin-bottom: 1rem;
 }
 
 .tip-card p {
   font-size: 0.9rem;
   color: #2e7d4e;
   line-height: 1.4;
-}
-
-.tip-card strong {
-  color: var(--primary-green);
-  font-size: 1rem;
-  display: block;
-  margin-bottom: 0.4rem;
 }
 
 .tip-card i {
