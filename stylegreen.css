@@ -301,7 +301,7 @@ section {
 }
 
 .go-back-btn::after {
-    content: "Go back to home page";
+    content: "Go back to Green Test page";
     position: absolute;
     bottom: 60px;
     left: 50%;
@@ -322,6 +322,52 @@ section {
 }
 
 .go-back-btn:hover {
+    background: #2e7d4f;
+    transform: scale(1.1);
+}
+
+.go-back-btn1 {
+    position: relative;
+    margin: 2rem auto 0 auto;
+    background: #3a9c5d;
+    color: white;
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.5rem;
+    text-decoration: none;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+    transition: background 0.3s ease, transform 0.3s ease;
+    z-index: 999;
+    margin-bottom: 1rem;
+    cursor: pointer;
+}
+
+.go-back-btn1::after {
+    content: "Go back to home page";
+    position: absolute;
+    bottom: 60px;
+    left: 50%;
+    transform: translateX(-50%);
+    background: #3a9c5d;
+    color: white;
+    padding: 0.4rem 0.7rem;
+    border-radius: 0.5rem;
+    font-size: 0.85rem;
+    white-space: nowrap;
+    opacity: 0;
+    pointer-events: none;
+    transition: opacity 0.3s ease;
+}
+
+.go-back-btn1:hover::after {
+    opacity: 1;
+}
+
+.go-back-btn1:hover {
     background: #2e7d4f;
     transform: scale(1.1);
 }
